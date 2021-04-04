@@ -1,0 +1,5 @@
+logo:  https://www.shakebugs.com/assets/static/shake-logo-full.f0cd5ff74ec1197b35fb.svg
+
+landing page image: https://www.shakebugs.com/assets/static/shake-dashboard@2x.25d3caaa7dbf4986d85b.png
+
+bug report image : https://www.shakebugs.com/assets/static/bug-report-shake@2x.e4791fc5f0174061ef95.png
