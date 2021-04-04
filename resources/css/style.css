@@ -17,6 +17,10 @@ body {
 
 header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
   background-color: #fff;
   border-bottom: 1px solid rgba(200, 200, 200, 0.2);
   display: flex;
@@ -46,7 +50,7 @@ nav a:hover {
   font-size: 1.6rem;
   text-decoration: none;
 }
-.cta .btn {
+.btn {
   background-color: var(--button-color);
   padding: 10px 20px;
   border-radius: 10px;
@@ -55,3 +59,82 @@ nav a:hover {
 /* nav li {
   display: inline-block;
 } */
+
+/* Banner */
+.banner {
+  width: 95%;
+  padding: 90px 50px;
+  margin: 0 auto;
+}
+.banner-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+
+.banner-grid h1 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.banner #form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#form label {
+  font-size: 2rem;
+}
+input[type="email"] {
+  padding: 10px 30px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.landing {
+  width: 95%;
+  /* height: 1000px; */
+  margin: 0 auto;
+  position: relative;
+  background-color: rgb(22, 6, 71);
+}
+.landing img {
+  max-width: 100%;
+  position: relative;
+  top: -200px;
+  height: auto;
+}
+.intro {
+  background-color: #fff;
+  width: 100%;
+  display: block;
+  height: 200px;
+}
+.features {
+  width: 60%;
+  line-height: 1.6;
+  position: relative;
+  top: -200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 50px;
+  color: #fff;
+  grid-template-areas:
+    ". feature1"
+    "feature2 .";
+}
+
+.features h2 {
+  font-size: 2.5rem;
+}
+.features p {
+  font-size: 1.6rem;
+  width: 90%;
+}
+.feature1 {
+  grid-area: feature1;
+}
+.feature2 {
+  grid-area: feature2;
+}
